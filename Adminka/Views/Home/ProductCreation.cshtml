@@ -1,0 +1,33 @@
+﻿@model Adminka.Models.ProductParameters
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProductCreation</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <h2>Создание тавара</h2>
+        <p>Название:</p>
+        <p>@Html.TextBoxFor(x => x.Name)</p>
+        <p>Цена:</p>
+        <p>@Html.TextBoxFor(x => x.Price, new { @type = "number" })</p>
+        <p>В наличии:</p>
+        <p>
+            @Html.DropDownListFor(x => x.InStock, new[] {
+            new SelectListItem() {Text = "Да", Value = bool.TrueString},
+            new SelectListItem() {Text = "Нет", Value = bool.FalseString}
+        })
+        </p>
+        <input type="submit" value="Создать" />
+    }
+</body>
+</html>
