@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adminka", "Adminka\Adminka.csproj", "{E6BD1F25-A563-4F91-994D-E926D2588E9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adminka.DataAccess", "Adminka.DataAccess\Adminka.DataAccess.csproj", "{C1D8AEDF-AE4C-453E-953D-3F21C0ED031D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E6BD1F25-A563-4F91-994D-E926D2588E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6BD1F25-A563-4F91-994D-E926D2588E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6BD1F25-A563-4F91-994D-E926D2588E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D8AEDF-AE4C-453E-953D-3F21C0ED031D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D8AEDF-AE4C-453E-953D-3F21C0ED031D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D8AEDF-AE4C-453E-953D-3F21C0ED031D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D8AEDF-AE4C-453E-953D-3F21C0ED031D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
