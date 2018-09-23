@@ -1,4 +1,6 @@
-﻿
+﻿@model List<Adminka.Models.ProductParameters>
+
+
 @{
     Layout = null;
 }
@@ -20,6 +22,15 @@
                 <td><p>Наличие на складе</p></td>
                 <td></td>
             </tr>
+            @foreach (var row in Model)
+            {
+                <tr>
+                    <td><p>@row.Name</p></td>
+                    <td><p>@row.Price</p></td>
+                    <td><p>@row.InStock</p></td>
+                    <td></td>
+                </tr>
+            }
         </table>
         <form action="/Home/ProductCreation">
             <input type="submit" value="Создать товар" />

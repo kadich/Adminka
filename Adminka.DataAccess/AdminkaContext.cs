@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Adminka.DataAccess
 {
-    class AdminkaContext : DbContext
+    public class AdminkaContext : DbContext
     {
         public DbSet<ProductEntity> Products { get; set; }
 
