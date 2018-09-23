@@ -1,6 +1,5 @@
 ﻿@model Adminka.DataAccess.Entities.ProductEntity
 
-
 @{
     Layout = null;
 }
@@ -10,12 +9,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>ProductCreation</title>
+    <title>Edit</title>
 </head>
 <body>
     @using (Html.BeginForm())
     {
-        <h2>Создание тавара</h2>
+        <h2>Редактирование тавара</h2>
         <p>Название:</p>
         <p>@Html.TextBoxFor(x => x.Name)</p>
         <p>Цена:</p>
@@ -27,7 +26,7 @@
                 new SelectListItem() {Text = "Нет", Value = bool.FalseString}
             })
         </p>
-        <input type="submit" value="Создать" />
+        <input type="submit" value="Редактировать" />
     }
 
     <form action="/Home/Index">

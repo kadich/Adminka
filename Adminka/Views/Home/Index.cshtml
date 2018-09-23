@@ -17,7 +17,6 @@
         <h2>Товары</h2>
         <table>
             <tr>
-                @*<td><p>Номер</p></td>*@
                 <td><p>Название товара</p></td>
                 <td><p>Цена</p></td>
                 <td><p>Наличие на складе</p></td>
@@ -25,13 +24,13 @@
             @foreach (var row in Model)
             {
                 <tr>
-                    @*<td><p>@row.Id</p></td>*@
                     <td><p>@row.Name</p></td>
                     <td><p>@row.Price</p></td>
                     <td><p>@row.InStock</p></td>
                     <td>
-                        @using (Html.BeginForm())
+                        @using (Html.BeginForm("Edit", "Home", FormMethod.Get))
                         {
+                            <input type="hidden" name="Id" value="@row.Id" />
                             <input type="submit" value="Редактировать" />
                         }
                     </td>
@@ -45,6 +44,7 @@
                 </tr>
             }
         </table>
+
         <form action="/Home/ProductCreation">
             <input type="submit" value="Создать товар" />
         </form>
